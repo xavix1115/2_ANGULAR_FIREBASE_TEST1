@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "alfadb01": {
+      "hosting": {
+        "login": [
+          "alfadb01"
+        ]
+      }
+    }
+  }
+}
