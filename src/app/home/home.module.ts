@@ -1,4 +1,3 @@
-import { NavbarComponent } from './../shared/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +7,7 @@ import { from } from 'rxjs';
 
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
