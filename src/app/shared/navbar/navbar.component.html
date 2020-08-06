@@ -20,10 +20,14 @@
         <a class="nav-link" [routerLink]="['/register']">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/login']">Login</a>
+        <a class="nav-link" [routerLink]="['/login']" *ngIf="!isLogged">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/']">Logout</a>
+        <a class="nav-link" [routerLink]="['/']" *ngIf="isLogged">Logout</a>
+      </li>
+      <li class="nav-item">
+        <!--<a class="nav-link">{{user | json}}</a>-->
+        <a class="nav-link">{{ user.email }}</a>
       </li>
     </ul>
   </div>
